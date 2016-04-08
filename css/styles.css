@@ -41,3 +41,7 @@ li {
 h4 {
   padding-top: 1em;
 }
+
+.output {
+  display: none;
+}
