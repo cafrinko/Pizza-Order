@@ -1,0 +1,43 @@
+.container {
+  display: block;
+  text-align: center;
+}
+
+h1 {
+  font-size: 7em;
+  font-family: fantasy;
+}
+
+h3 {
+  font-family: fantasy;
+  padding-bottom: 2em;
+}
+
+#size {
+  width: 8em;
+  display: inline-block;
+}
+
+#toppings {
+
+  padding-bottom: 2em;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  padding-left: 1em;
+}
+
+li {
+  display: inline;
+  padding-right: 1em;
+}
+
+.pizzaTypes li {
+  font-size: 20px;
+}
+
+h4 {
+  padding-top: 1em;
+}

@@ -10,64 +10,76 @@
   <body>
 
     <div class="container">
-      <h2>Piece of shitty fucking cock website</h2>
+      <h1>Capizzi's</h1>
+      <h3>Your friendly neighborhood pizzeria</h3>
 
-      <h3>Order your pizza here by selecting from our myriad of premium options</h3>
-      <form class="pizzaChar">
+      <!-- <h3>Pizza Menu</h3> -->
+      <!-- <ul class="sizes">
+        <h4>Prices of Sizes</h4>
+        <li>small $10</li>
+        <li>medium $15</li>
+        <li>large $20</li>
+        <li>xlarge $25</li>
+      </ul>
+      <ul class="pizzaTypes">
+        <li>Margarita</li>
+        <li>Pepperoni</li>
+        <li>Basil Pesto</li>
+        <li>Vegetable</li>
+      </ul> -->
+      <form class="pizza">
+        <div class="pizzaType">
+          <!-- <h5>Choose what kind of pizza you would like</h5> -->
+          <!-- <label class="checkbox-inline">
+            <input type="checkbox" id="margarita" value="option1"> Margarita
+          </label> -->
+          <!-- <label class="checkbox-inline">
+            <input type="checkbox" id="pepperoni" value="option2"> Pepperoni
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="basilPesto" value="option3"> Basil Pesto
+          </label>
+          <label class="checkbox-inline">
+            <input type="checkbox" id="vegetable" value="option4"> Vegetable
+          </label>
+        </div> -->
+        <h4>Customize our basic margarita cheese pizza</h4>
         <div class="pizzaSize">
-          <h5>Try ordering your pizza size here</h5>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Small $10
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox2" value="option2"> Medium $13
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3"> Large $15
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox4" value="option4"> XLarge $20
-          </label>
+          <!-- <h5>Try ordering your pizza size here</h5> -->
+          <select class="form-control" id="size">
+            <option id="small">Small $10</option>
+            <option id="medium">Medium $15</option>
+            <option id="large">Large $20</option>
+          </select>
         </div>
-        <div class="basicToppings">
-          <h5>Now try ordering your basic toppings here. Check as many as you'd like, and there'll be no extra charge on these</h5>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Onions
+        <div class="toppings">
+          <!-- <h5>Now try ordering your basic toppings here. Check as many as you'd like, and there'll be a $1 extra charge per topping on these</h5> -->
+          <h4>You get 2 free toppings. 3 or more toppings will be $1 each</h4>
+          <label class="checkbox-inline" name="toppings">
+            <input type="checkbox" id="onions" value="option1"> Onions
           </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox2" value="option2"> Garlic
+          <label class="checkbox-inline" name="toppings">
+            <input type="checkbox" id="garlic" value="option2"> Garlic
           </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3"> Olives
+          <label class="checkbox-inline" name="toppings">
+            <input type="checkbox" id="olives" value="option3"> Olives
           </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox4" value="option4"> Green Peppers
+          <label class="checkbox-inline" name="toppings">
+            <input type="checkbox" id="greenPeppers" value="option4"> Green Peppers
           </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox4" value="option5"> Mushrooms
+          <label class="checkbox-inline" name="toppings">
+            <input type="checkbox" id="mushrooms" value="option5"> Mushrooms
           </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox4" value="option6"> Pepperoni
-          </label>
-        </div>
-        <div class="fancyToppings">
-          <h5>Now for the fancy toppings. Check as many as you'd like, though keep in mind they're $1.50 each</h5>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox1" value="option1"> Bacon
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox2" value="option2"> One Hundred Year Old Eggs
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox3" value="option3"> Avocado
-          </label>
-          <label class="checkbox-inline">
-            <input type="checkbox" id="inlineCheckbox4" value="option4"> Ejaculate
+          <label class="checkbox-inline" name="toppings">
+            <input type="checkbox" id="arugula" value="option5"> Arugula
           </label>
         </div>
         <button type="submit" class="btn">Submit order, no takebacksies</button>
       </form>
 
+      <div class="output">
+        <p>Total: <span class="total"></span></p>
+      </div>
     </div>
   </body>
 </html>
