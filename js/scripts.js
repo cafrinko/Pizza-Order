@@ -32,6 +32,7 @@ Pizza.prototype.cost = function() {
 
 $(document).ready(function() {
   $("form.pizza").submit(function(event) {
+    event.preventDefault();
     var size = $("#size").val();
 
     var toppings = [];
