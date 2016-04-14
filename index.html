@@ -16,31 +16,49 @@
         <div class="pizzaType">
         <h4>Customize our basic margarita cheese pizza</h4>
         <div class="pizzaSize">
-          <select class="form-control" id="size">
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" id="small" value="small" checked>
+              Small $10
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" id="medium" value="medium" checked>
+              Medium $15
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" id="large" value="large" checked>
+              Large $20
+            </label>
+          </div>
+          <!-- <select class="form-control" id="size">
             <option id="small">Small $10</option>
             <option id="medium">Medium $15</option>
             <option id="large">Large $20</option>
-          </select>
-        </div>
+          </select> -->
+        <!-- </div> -->
         <div class="toppings">
           <h4>You get 2 free toppings. 3 or more toppings will be $1 each</h4>
           <label class="checkbox-inline" name="toppings">
-            <input type="checkbox" id="onions" value="option1"> Onions
+            <input type="checkbox" id="onions" value="onions"> Onions
           </label>
           <label class="checkbox-inline" name="toppings">
-            <input type="checkbox" id="garlic" value="option2"> Garlic
+            <input type="checkbox" id="garlic" value="garlic"> Garlic
           </label>
           <label class="checkbox-inline" name="toppings">
-            <input type="checkbox" id="olives" value="option3"> Olives
+            <input type="checkbox" id="olives" value="olives"> Olives
           </label>
           <label class="checkbox-inline" name="toppings">
-            <input type="checkbox" id="greenPeppers" value="option4"> Green Peppers
+            <input type="checkbox" id="greenPeppers" value="greenPeppers"> Green Peppers
           </label>
           <label class="checkbox-inline" name="toppings">
-            <input type="checkbox" id="mushrooms" value="option5"> Mushrooms
+            <input type="checkbox" id="mushrooms" value="mushrooms"> Mushrooms
           </label>
           <label class="checkbox-inline" name="toppings">
-            <input type="checkbox" id="arugula" value="option5"> Arugula
+            <input type="checkbox" id="arugula" value="arugula"> Arugula
           </label>
         </div>
         <button type="submit" class="btn">Submit order, no takebacksies</button>
